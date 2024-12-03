@@ -1,5 +1,5 @@
 # APPLICATION OF HANDTRACKING IN IMAGE PROCESSING FOR NON-TOUCH DEVICE CONTROL
-An Off-policy Reinforcement Learning Algorithm for Optimal Tracking Control Problem
+A system for touchless device control using hand tracking and image processing, enabling intuitive and hygienic interaction.
 
 Full report: [Link](https://drive.google.com/drive/folders/1c36tEH7o8h9nW9n_5ceyp_sqpw7lBP_1?usp=drive_link) 
 ## 1. Introduction
@@ -8,7 +8,11 @@ The COVID-19 pandemic inflicted substantial losses on Vietnam, with nearly 1.7 m
 This system employs a trained Hand Tracking model to identify hand landmarks, enabling gesture-based control and interaction with hardware components, including LED lights and alarms. This application not only mitigates direct contact during pandemics but also holds significant potential for industrial device control, enhancing production efficiency and workplace safety.
 ## 2. Module HANDTRACKING
 
-![image](https://github.com/user-attachments/assets/032bc792-3ef3-4a7f-b28e-5aea855e8343)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/032bc792-3ef3-4a7f-b28e-5aea855e8343" width="80%" />
+</p>
+<p align="center"> Figure 1. Visualization of Hand Landmarks using MediaPipe</p>
+
 
 The HandTracking module is part of the MediaPipe library, developed by Google to provide real-time image and video processing solutions. The module uses pre-trained machine learning models to recognize and track 21 landmarks on the hand, allowing you to determine the location, orientation, and gestures of the hand.
 
@@ -39,30 +43,49 @@ AB . BC is the dot product of the two vectors AB and BC.
 
 ## 3. Hardware System
 
-![image](https://github.com/user-attachments/assets/25d16ae1-5efc-42ff-a283-3bff285fe0dc)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/25d16ae1-5efc-42ff-a283-3bff285fe0dc" width="50%" />
+</p>
+<p align="center"> Figure 2. Hardware System</p>
+
 
 ## 4. Result
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a5ae5fee-dea6-43f0-990f-1dc7173edac5" width="50%" />
+</p>
+<p align="center"> Figure 3. Interface Image</p>
 
 **Case 1: SOS Signal**
 
 When the user raises their hand and lowers their pinky finger, the system recognizes an SOS signal. 
 The red LED illuminates, and the alarm sounds at maximum volume
 
-![image](https://github.com/user-attachments/assets/a2c05999-b5f8-4a88-bdb3-df872712d464)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/a2c05999-b5f8-4a88-bdb3-df872712d464" width="50%" />
+</p>
+<p align="center"> Figure 4. Image with Pinky Down and Volume at 100%</p>
 
 
 **Case 2: NEED Signal with Adjustable Volume**
 
 When the user raises their hand and lowers their ring finger, the system recognizes a NEED signal. The blue LED lights up, and the distance between the thumb and index finger dynamically controls the alarm's volume. This feature has potential for controlling analog outputs.
 
-![image](https://github.com/user-attachments/assets/f94c632b-e689-4192-ac0d-9e2d0f505ab5)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/f94c632b-e689-4192-ac0d-9e2d0f505ab5" width="50%" />
+</p>
+<p align="center"> Figure 5.Image with Ring Finger Down and Volume at 30%</p>
+
 
 **Case 3: NEED Signal with Maximum Volume**
 
 Similar to Case 2, the system recognizes a NEED signal when the user raises their hand and lowers their ring finger. However, in this case, the alarm sounds at maximum volume.
 
-![image](https://github.com/user-attachments/assets/4171392c-7bc4-4e96-9bee-fc6c304af6ba)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4171392c-7bc4-4e96-9bee-fc6c304af6ba" width="50%" />
+</p>
+<p align="center"> Figure 6. Image with Ring Finger Down and Volume at 100%</p>
+
 
 
 ## 5. Conclusion
