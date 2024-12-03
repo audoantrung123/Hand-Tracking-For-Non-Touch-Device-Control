@@ -38,7 +38,8 @@ AB . BC is the dot product of the two vectors AB and BC.
 |AB|, |BC| are the lengths of the two vectors AB and BC.
 
 ## 3. Hardware System
-![image](https://github.com/user-attachments/assets/83f4a59c-6565-4e16-b02e-a08d622f3b55)
+
+![image](https://github.com/user-attachments/assets/25d16ae1-5efc-42ff-a283-3bff285fe0dc)
 
 ## 4. Result
 
